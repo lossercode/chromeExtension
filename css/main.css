@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 自定义根伪类 */
+:root{
+    --main-color: #ffd21e;
+    --main-bg-color: #374151;
+}
+
+html{
+    /* 设置1rem = 10px */
+    font-size: 62.5%;
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
