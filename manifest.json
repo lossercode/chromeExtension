@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "octoparse",
+    "name": "LightingCrawl",
     "version": "1.0",
     "description": "基于浏览器插件的数据采集工具",
     "icons": {
@@ -10,5 +10,12 @@
     },
     "action": {
         "default_popup": "popup.html"
+    },
+    "permissions":["scripting", "tabs", "storage", "activeTab"],
+    "host_permissions": [
+        "<all_urls>"
+    ],
+    "background": {
+        "service_worker": "background.js"
     }
 }
