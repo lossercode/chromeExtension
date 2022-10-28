@@ -1,22 +1,57 @@
-#box{
-    height: 50rem;
-    width: 30rem;
-    background: var(--main-bg-color);
-    padding: 2rem 1rem;
-}
-
-#header{
+header{
     width: 100%;
     height: 5rem;
 }
 
-#header img{
-    width: 32px;
-    height: 32px;
+header img{
+    width: 3.2rem;
+    height: 3.2rem;
 }
 
-#header span{
-    height: 32px;
+header span{
+    height: 3.2rem;
     font-size: 1.8rem;
     color: var(--main-color);
 }
+
+section{
+    width: 100%;
+    margin-top: 3rem;
+    height: 30rem;
+}
+
+.options{
+    width: 70%;
+    height: 4rem;
+    border-radius: .5rem;
+    background: var(--main-color);
+}
+
+/* 设置该动画有一个bug,也就是字体会发生模糊和抖动的情况，主要原因是由于小数点精确度问题，
+即scale(1.2) * 字体的高度 会 产生小数点 */
+.options:hover{
+    transform: scale(1.15) translateZ(0);
+    transition: all .3s;
+}
+
+.options img{
+    width: 2.8rem;
+    height: 2.8rem;
+}
+
+.options span{
+    width: 7.5rem;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    font-size: 1.4rem;
+    transform: translateZ(0);
+}
+
+footer{
+    width: 100%;
+    height: 5rem;
+    font-size: .8rem;
+    color: var(--main-color);
+}
+
